@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="chat-container">
+    <header class="chat-header">
+        <div class="header-content">
+            <div class="header-avatar">
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="header-text">
+                <h1>Admission Pro Assistant</h1>
+                <span class="subtitle">AI-Powered College Admission Support</span>
+            </div>
+        </div>
+        <div class="status-indicator">
+            <span class="status-dot"></span>
+            Online • Ready to Help
+        </div>
+    </header>
+
+    <div class="chat-messages" id="chatMessages">
+        <div class="message bot-message">
+            <div class="message-avatar">
+                <i class="fas fa-robot"></i>
+            </div>
+            <div class="message-content">
+                <div class="message-text">
+                    <strong>Welcome to Admission Pro Assistant! 🎓</strong><br><br>
+                    I'm here to help you with everything about college admissions:<br><br>
+                    
+                    <strong>📅 Application Process</strong><br>
+                    • Deadlines & timelines<br>
+                    • Required documents<br>
+                    • Application steps<br><br>
+                    
+                    <strong>💰 Financial Information</strong><br>
+                    • Tuition fees<br>
+                    • Scholarships<br>
+                    • Payment options<br><br>
+                    
+                    <strong>🎯 Programs & Requirements</strong><br>
+                    • Available programs<br>
+                    • Admission criteria<br>
+                    • Eligibility requirements<br><br>
+                    
+                    <em>What would you like to know about your college admission journey?</em>
+                </div>
+                <div class="message-time" id="currentTime"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="suggestions-container">
+        <div class="suggestions-header">
+            <i class="fas fa-bolt"></i>
+            Quick Questions
+        </div>
+        <div class="suggestions" id="suggestions"></div>
+    </div>
+
+    <div class="chat-input-container">
+        <div class="input-group">
+            <textarea 
+                id="userInput" 
+                placeholder="Ask me anything about college admissions... (e.g., What are the application deadlines?)" 
+                maxlength="500"
+                rows="1"
+            ></textarea>
+            <button id="sendButton">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+        <div class="input-footer">
+            <div class="typing-indicator" style="display: none;" id="typingStatus">
+                <span>AI is thinking</span>
+                <div class="typing-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <span class="char-count" id="charCount">0/500</span>
+        </div>
+    </div>
+</div>
+
+<div class="contact-info">
+    <h3>
+        <i class="fas fa-headset"></i>
+        Admission Support
+    </h3>
+    <div class="contact-details">
+        <div class="contact-item">
+            <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-text">
+                <strong>Admission Office</strong>
+                <span>+1-555-1234</span>
+            </div>
+        </div>
+        <div class="contact-item">
+            <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-text">
+                <strong>Email</strong>
+                <span>admissions@university.edu</span>
+            </div>
+        </div>
+        <div class="contact-item">
+            <div class="contact-icon">
+                <i class="fas fa-clock"></i>
+            </div>
+            <div class="contact-text">
+                <strong>Office Hours</strong>
+                <span>Mon-Fri 9:00 AM - 5:00 PM</span>
+            </div>
+        </div>
+        <div class="contact-item">
+            <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-text">
+                <strong>Location</strong>
+                <span>123 University Avenue</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="quick-stats">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <span class="stat-number">24/7</span>
+                <span class="stat-label">Available</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" id="messageCount">0</span>
+                <span class="stat-label">Questions Answered</span>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

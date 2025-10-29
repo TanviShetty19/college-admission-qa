@@ -1,0 +1,74 @@
+{
+  "faqs": [
+    {
+      "id": 1,
+      "question": "What are the application deadlines?",
+      "answer": "For Fall 2024 intake: Regular decision - May 15th, Early decision - January 15th. For Spring 2025 intake: October 15th.",
+      "category": "deadlines",
+      "keywords": ["deadline", "application date", "last date", "when to apply"],
+      "priority": "high"
+    },
+    {
+      "id": 2,
+      "question": "What documents are required for admission?",
+      "answer": "Required documents: 1. High school transcripts 2. Standardized test scores (SAT/ACT) 3. Personal statement 4. Two recommendation letters 5. Copy of passport 6. Financial documents for international students.",
+      "category": "documents",
+      "keywords": ["documents", "required papers", "what to submit", "application materials"],
+      "priority": "high"
+    },
+    {
+      "id": 3,
+      "question": "What is the tuition fee structure?",
+      "answer": "Undergraduate programs: $15,000 per semester. Graduate programs: $18,000 per semester. Additional fees: Technology fee - $500, Library fee - $300, Student activity fee - $200 per semester.",
+      "category": "fees",
+      "keywords": ["tuition", "fees", "cost", "price", "how much"],
+      "priority": "medium"
+    },
+    {
+      "id": 4,
+      "question": "Are scholarships available?",
+      "answer": "Yes, we offer: Merit scholarships (up to 50% tuition), Need-based scholarships, Sports scholarships, and International student scholarships. Application deadline for scholarships is March 1st.",
+      "category": "scholarships",
+      "keywords": ["scholarship", "financial aid", "funding", "grant"],
+      "priority": "medium"
+    },
+    {
+      "id": 5,
+      "question": "What programs do you offer?",
+      "answer": "We offer: Computer Science, Business Administration, Engineering (Mechanical, Electrical, Civil), Psychology, Biology, Mathematics, and Economics. Visit our programs page for complete list.",
+      "category": "programs",
+      "keywords": ["courses", "degrees", "programs", "majors"],
+      "priority": "high"
+    },
+    {
+      "id": 6,
+      "question": "What are the English language requirements?",
+      "answer": "For international students: IELTS 6.5 overall or TOEFL 90. Some programs may have higher requirements. We also accept Duolingo English Test (115+).",
+      "category": "international",
+      "keywords": ["IELTS", "TOEFL", "English", "language requirement"],
+      "priority": "medium"
+    },
+    {
+      "id": 7,
+      "question": "Is on-campus housing available?",
+      "answer": "Yes, we provide on-campus dormitories. Cost ranges from $3,000-$5,000 per semester based on room type. Application for housing should be submitted with admission application.",
+      "category": "housing",
+      "keywords": ["hostel", "accommodation", "dorm", "housing", "stay"],
+      "priority": "low"
+    },
+    {
+      "id": 8,
+      "question": "What is the minimum GPA requirement?",
+      "answer": "Minimum 3.0 GPA on 4.0 scale for undergraduate programs. Some competitive programs may require higher GPA. We consider overall academic profile.",
+      "category": "requirements",
+      "keywords": ["GPA", "marks", "grades", "eligibility", "requirement"],
+      "priority": "high"
+    }
+  ],
+  "contact_info": {
+    "admission_office": "+1-555-1234",
+    "email": "admissions@university.edu",
+    "office_hours": "Mon-Fri 9:00 AM - 5:00 PM",
+    "address": "123 University Avenue, City, State 12345"
+  }
+}
